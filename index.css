@@ -20,13 +20,83 @@ img{
 }
 
 button{
-    cursor: pointer;
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+.game_over{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F8E8EF;
+    border: 2px solid #b2afc0;
+    border-radius: 10px;
+    padding: 2rem;
+    position: fixed;
+}
+
+.game_over_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343434; 
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.game_over_correct_word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343434; 
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 0.5rem;
+}
+
+.game_over_correct_word .correct_word {
+    color: #000000;
+    font-weight: 700;
+    background-color: #7665E2;
+    padding: 0.2rem 0.5rem;
+}
+
+.game_over_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    background: #7665E2;
+    border: none;
+    border-radius: 0.625rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.again:hover {
+    scale: 1.1;
+    color: #FFF;
+    background: #4a39b5;
+}   
+
 .main-container {
     display: flex;
     justify-content: center;
@@ -163,6 +233,8 @@ button{
     letter-spacing: 0.10938rem;
     border: none;
     transition: ease-in-out 0.3s;
+    cursor: pointer;
+    text-transform: capitalize;
 }
 
 .alphabet-container button:hover {
