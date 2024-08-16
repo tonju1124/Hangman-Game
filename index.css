@@ -136,6 +136,7 @@ button{
     border-radius: 1.25rem;
     background: #363636;
     padding: 4rem 3rem;
+    transition: ease-in-out 0.5s;
 }
 
 .hangman {
@@ -270,3 +271,5 @@ button{
     background: #4a39b5;
     color: #FFF;
 }
+
+/* adding media in the future */
