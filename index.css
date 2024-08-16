@@ -28,7 +28,7 @@ button{
 }
 
 .game_over{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -36,6 +36,15 @@ button{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.game_over.show{
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .game_over .game_over_content{
@@ -76,7 +85,7 @@ button{
     gap: 0.5rem;
 }
 
-.game_over_correct_word .correct_word {
+.game_over_correct_word b {
     color: #000000;
     font-weight: 700;
     background-color: #7665E2;
@@ -222,7 +231,7 @@ button{
     letter-spacing: 0.09375rem;
 }
 
-.alphabet-container {
+.alphabet_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -232,7 +241,7 @@ button{
     width: 50rem;
 }
 
-.alphabet-container button {
+.alphabet_container button {
     width: 3.75rem;
     height: 5rem;
     flex-shrink: 0;
@@ -251,7 +260,12 @@ button{
     text-transform: capitalize;
 }
 
-.alphabet-container button:hover {
+.alphabet_container button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.alphabet_container button:hover {
     scale: 1.1; 
     background: #4a39b5;
     color: #FFF;
