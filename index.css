@@ -194,14 +194,14 @@ button{
 }
 
 .word_display .letter {
-    margin-top: 3rem;
+    margin-top: 3.1rem;
     width: 4rem;
     border-bottom: #000 3px solid;
     text-align: center;
     text-transform: uppercase;
 }
 
-.word_display .letter.correct {
+.word_display .letter.guessed {
     border-color: transparent;
     margin: 0;
 }
