@@ -10,6 +10,23 @@ html {
     padding: 0;
 }
 
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: ease-in-out 0.5s;
+}
+
+button{
+    cursor: pointer;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 .main-container {
     display: flex;
     justify-content: center;
@@ -79,7 +96,23 @@ html {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.125rem;
+    list-style: none;
+    gap: 1rem;
 }
+
+.word_display .letter {
+    margin-top: 3rem;
+    width: 4rem;
+    border-bottom: #000 3px solid;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.word_display .letter.correct {
+    border-color: transparent;
+    margin: 0;
+}
+
 
 .incorrect_guess {
     display: flex;
@@ -129,4 +162,11 @@ html {
     line-height: normal;
     letter-spacing: 0.10938rem;
     border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.alphabet-container button:hover {
+    scale: 1.1; 
+    background: #4a39b5;
+    color: #FFF;
 }
