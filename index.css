@@ -104,3 +104,29 @@ html {
     line-height: normal;
     letter-spacing: 0.09375rem;
 }
+
+.alphabet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1.25rem;
+    width: 50rem;
+}
+
+.alphabet-container button {
+    width: 3.75rem;
+    height: 5rem;
+    flex-shrink: 0;
+    color: #000;
+    border-radius: 0.625rem;
+    background: #7665E2;
+    font-family: Itim;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.10938rem;
+    border: none;
+}
