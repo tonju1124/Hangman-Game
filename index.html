@@ -1,12 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hangman</title>
-    <link rel="icon" href="svg/Icon.svg" type="image/svg+xml" />
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman</title>
+  <link rel="icon" href="svg/Icon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="card">
+      <div class="hangman">
+        <div class="hangman-img"><img src="" id="hangman-img"></div>
+        <div class="word">HANGMAN GAME</div>
+      </div>
+      <div class="game_box">
+        <ul class="word_display">
+          <li class="letters"></li>
+          <li class="letters"></li>
+          <li class="letters"></li>
+          <li class="letters"></li>
+          <li class="letters"></li>
+          <li class="letters"></li>
+        </ul>
+      </div>
+      <div class="incorrect_guess">Incorrect Guesses : <b class="counter">0 / 6</b></div>
+      <div class="alphabet-container"></div>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
